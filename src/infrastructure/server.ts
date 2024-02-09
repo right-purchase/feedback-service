@@ -2,7 +2,7 @@ import express, { IRouterHandler, Router } from "express";
 
 export const startServer = (...routers: Router[]) => {
   const app = express();
-  const port = process.env.EXPRESS_API_PORT || 80;
+  const port = process.env.PORT || 80;
 
   app.get("/", (_req, res) => {
     res.send("Hello World!");

@@ -1,3 +1,7 @@
+import formRouter from "./adapters/api/formRouter";
 import { startServer } from "./infrastructure/server";
+import { initDotenv } from "./config/initDotenv";
 
-startServer();
+initDotenv();
+
+startServer(formRouter);

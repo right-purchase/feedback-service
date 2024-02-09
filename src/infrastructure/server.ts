@@ -4,7 +4,7 @@ export const startServer = (...routers: Router[]) => {
   const app = express();
   const port = process.env.EXPRESS_API_PORT || 3000;
 
-  app.get("/", (req, res) => {
+  app.get("/", (_req, res) => {
     res.send("Hello World!");
   });
 
@@ -13,6 +13,6 @@ export const startServer = (...routers: Router[]) => {
   }
 
   app.listen(port, () => {
-    console.log(`Server running at http://localhost:${port}`);
+    console.log(`Server running at port ${port}`);
   });
 };

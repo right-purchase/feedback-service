@@ -7,7 +7,7 @@
     "start": "node dist/index.js",
     "serve": "nodemon --watch src/ --ext ts --exec ts-node src/index.ts",
     "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
@@ -19,8 +19,11 @@
   },
   "devDependencies": {
     "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.12",
     "@types/node": "^20.11.16",
+    "jest": "^29.7.0",
     "nodemon": "^3.0.3",
+    "ts-jest": "^29.1.2",
     "ts-node": "^10.9.2",
     "type-fest": "^4.10.2",
     "typescript": "^5.3.3"

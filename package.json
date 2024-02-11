@@ -1,6 +1,6 @@
 {
   "name": "feedback-service",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The Feedback Service provides the means to the user contact Right Purchase",
   "main": "dist/index.ts",
   "scripts": {
